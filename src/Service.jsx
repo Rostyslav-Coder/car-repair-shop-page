@@ -47,51 +47,63 @@ function Service() {
 				</div>
 
 				<div className='service__cards'>
+
 					<div className='service__card'>
-						<img src='service/tire.jpg' alt='tire logo'></img>
+						<img src='service/tire.jpg' alt='tire logo' />
 						<p className='text'>Tire Service</p>
 					</div>
+
 					<div className='service__card'>
-						<img src='service/body.jpg' alt='body logo'></img>
+						<img src='service/body.jpg' alt='body logo' />
 						<p className='text'>Body Repair</p>
 					</div>
+
 					<div className='service__card'>
-						<img src='service/paint.jpg' alt='painting logo'></img>
+						<img src='service/paint.jpg' alt='painting logo' />
 						<p className='text'>Painting Services</p>
 					</div>
+
 					<div className='service__card'>
-						<img src='service/electric.jpg' alt='electrical logo'></img>
+						<img src='service/electric.jpg' alt='electrical logo' />
 						<p className='text'>Electrical Services</p>
 					</div>
+
 					<div className='service__card'>
-						<img src='service/engine.jpg' alt='engine logo'></img>
+						<img src='service/engine.jpg' alt='engine logo' />
 						<p className='text'>Engine Repair</p>
 					</div>
+
 					<div className='service__card'>
-						<img src='service/suspension.jpg' alt='suspension logo'></img>
+						<img src='service/suspension.jpg' alt='suspension logo' />
 						<p className='text'>Suspension Maintenance</p>
 					</div>
+
 					<div className='service__card'>
-						<img src='service/regular.jpg' alt='regular logo'></img>
+						<img src='service/regular.jpg' alt='regular logo' />
 						<p className='text'>Regular Maintenance</p>
 					</div>
+
 					<div className='service__card'>
-						<img src='service/conditioning.jpg' alt='conditioning logo'></img>
+						<img src='service/conditioning.jpg' alt='conditioning logo' />
 						<p className='text'>Air Conditioning System</p>
 					</div>
+
 					<div className='service__card'>
-						<img src='service/transmission.jpg' alt='transmission logo'></img>
+						<img src='service/transmission.jpg' alt='transmission logo' />
 						<p className='text'>Transmission and Gearbox</p>
 					</div>
+
 					<div className='service__card'>
-						<img src='service/diagnostic.jpg' alt='diagnostic logo'></img>
+						<img src='service/diagnostic.jpg' alt='diagnostic logo' />
 						<p className='text'>Diagnostic and Computer Tuning</p>
 					</div>
+
 				</div>
 
 				<div className='service__images'>
-					<img className='employee_girl' src='service/employee-girl.png' alt='employee girl' ref={employeeGirlRef}></img>
+					<img className='employee_girl' src='service/employee-girl.png' alt='employee girl' ref={employeeGirlRef} />
 				</div>
+
 			</div>
 
 		</section>

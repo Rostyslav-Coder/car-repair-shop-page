@@ -31,6 +31,7 @@ function Review() {
 
 	return (
 		<section className='review' id='review' ref={reviewRef}>
+
 			<div className='review__wrapper wrapper'>
 
 				<div className='review__content content'>
@@ -42,54 +43,42 @@ function Review() {
 					<div className='review__cards cards'>
 
 						<div className='card'>
-
 							<p className='card__text text'>
 								Professional and fast repair! Thanks.
 								My Ford Mustang feels like new.
 							</p>
-
 							<p className='card__name text'>
 								John Smith
 							</p>
-
 							<p className='card__car text'>
 								Ford Mustang
 							</p>
-
 						</div>
 
 						<div className='card'>
-
 							<p className='card__text text'>
 								Excellent service!
 								My Chevrolet Silverado is back on the road.
 							</p>
-
 							<p className='card__name text'>
 								Maria Johnson
 							</p>
-
 							<p className='card__car text'>
 								Chevrolet Silverado
 							</p>
-
 						</div>
 
 						<div className='card'>
-
 							<p className='card__text text'>
 								Reliable auto service.
 								My Dodge Ram appreciates the attention to detail.
 							</p>
-
 							<p className='card__name text'>
 								Peter Brown
 							</p>
-
 							<p className='card__car text'>
 								Dodge Ram
 							</p>
-
 						</div>
 
 					</div>
@@ -97,7 +86,7 @@ function Review() {
 				</div>
 
 				<div className='review__image'>
-					<img src='review/customer.png' alt='customer' className='customer' ref={customerRef}></img>
+					<img src='review/customer.png' alt='customer' className='customer' ref={customerRef} />
 				</div>
 
 			</div>

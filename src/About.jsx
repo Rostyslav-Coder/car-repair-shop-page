@@ -29,12 +29,15 @@ function About() {
 				</div>
 
 				<div className='about__images'>
-					<img className='about__image' src='logo/mobil-1.png' alt="mobil 1"></img>
-					<img className='about__image' src='logo/shell.png' alt="shell"></img>
-					<img className='about__image' src='logo/castrol.png' alt="castrol"></img>
-					<img className='about__image' src='logo/quaker.png' alt="quaker"></img>
-					<img className='about__image' src='logo/xado.png' alt="xado"></img>
+
+					<img className='about__image' src='logo/mobil-1.png' alt="mobil 1" />
+					<img className='about__image' src='logo/shell.png' alt="shell" />
+					<img className='about__image' src='logo/castrol.png' alt="castrol" />
+					<img className='about__image' src='logo/quaker.png' alt="quaker" />
+					<img className='about__image' src='logo/xado.png' alt="xado" />
+
 				</div>
+
 			</div>
 
 		</section>
