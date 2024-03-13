@@ -140,7 +140,7 @@ body {
 /* ========== Banner Styles ========== */
 .banner {
 	position: relative;
-	background-image: url(../banner/banner-bg.jpg);
+	background-image: url(./assets/banner/banner-bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -205,7 +205,7 @@ body {
 .about {
 	padding: 10vh 0;
 	overflow: hidden;
-	background-image: url(../about/about-car.png);
+	background-image: url(./assets/about/about-car.webp);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center right;
@@ -244,7 +244,7 @@ body {
 /* ========== Service Styles ========== */
 .service {
 	position: relative;
-	background-image: url(../service/service-bg.jpg);
+	background-image: url(./assets/service/service-bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -315,7 +315,7 @@ body {
 .review {
 	position: relative;
 	padding: 10vh 0;
-	background-image: url(../review/review-bg.png);
+	background-image: url(./assets/review/review-bg.webp);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -380,7 +380,7 @@ body {
 /* ========== Contact Styles ========== */
 .contact {
 	padding: 6rem 0 2rem;
-	background-image: url(../contact/contacn-bg.jpg);
+	background-image: url(./assets/contact/contacn-bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
