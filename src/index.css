@@ -5,11 +5,13 @@
 :root {
 	--black: #222222;
 	--dark: #041622;
+	--header-bg: #242424cc;
 	--dark-bg: #333333aa;
 	--grey: #2f3534;
 	--light-bg: #aaaaaaaa;
 	--red: #871a1a;
 	--white: #fefefe;
+	--button-bg: #fefefecc;
 
 	font-family: 'Roboto', serif;
 }
@@ -73,9 +75,10 @@ body {
 	right: 3.5rem;
 	width: 5rem;
 	height: 5rem;
-	background-color: var(--white, #fefefe);
+	background-color: var(--button-bg, #fefefecc);
+	backdrop-filter: blur(20px);
 	border-radius: 50%;
-	z-index: 1001;
+	z-index: 1100;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -98,10 +101,10 @@ body {
 	width: 75%;
 	height: 100vh;
 	padding: 2rem;
-	background-color: var(--grey, #2f3534);
+	background-color: var(--header-bg, #242424cc);
 	border-left: 2px solid var(--white, #fefefe);
+	backdrop-filter: blur(20px);
 	z-index: 1000;
-	/* display: none; */
 }
 
 .header__wrapper {
@@ -115,6 +118,7 @@ body {
 .header__logo {
 	align-self: center;
 	width: 6rem;
+	z-index: 1001;
 }
 
 .logo {
@@ -126,6 +130,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 3rem;
+	z-index: 1001;
 }
 
 .nav__button {
@@ -140,17 +145,21 @@ body {
 /* ========== Banner Styles ========== */
 .banner {
 	position: relative;
-	background-image: url(./assets/banner/banner-bg.jpg);
+	padding: 10vh 0 0;
+	min-height: 100vh;
+	z-index: 10;
+}
+
+.banner__layer {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 10vh 0 0;
-	min-height: 100vh;
+	z-index: 11;
 }
 
 .banner__content {
 	background-color: var(--dark-bg, #333333aa);
-	z-index: 5;
+	z-index: 13;
 }
 
 .banner__title,
@@ -199,6 +208,7 @@ body {
 .employers {
 	width: 110%;
 	opacity: 0;
+	z-index: 12;
 }
 
 /* ========== About Styles ========== */
@@ -209,6 +219,7 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center right;
+	z-index: 30;
 }
 
 .about__wrapper {
@@ -217,6 +228,7 @@ body {
 
 .about__content {
 	background-color: var(--light-bg, #aaaaaaaa);
+	z-index: 31;
 }
 
 .about__title,
@@ -238,24 +250,38 @@ body {
 .about__image {
 	width: 10%;
 	height: 100%;
-	z-index: 6;
+	z-index: 32;
 }
 
 /* ========== Service Styles ========== */
 .service {
 	position: relative;
-	background-image: url(./assets/service/service-bg.jpg);
+	min-height: 100vh;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.service__layer {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 10vh 0px;
-	min-height: 100vh;
-	overflow: hidden;
+	z-index: 21;
+}
+
+.service__wrapper {
+	padding: 10vh 0;
+}
+
+.parallax__box {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	z-index: 24;
 }
 
 .service__content {
 	background-color: var(--dark-bg, #333333aa);
-	z-index: 5;
+	z-index: 23;
 }
 
 .service__title,
@@ -303,12 +329,14 @@ body {
 	position: absolute;
 	bottom: -5%;
 	left: 0;
+	z-index: 22;
 }
 
 .employee_girl {
 	height: 70vh;
 	opacity: 0;
 	transform-origin: bottom;
+	z-index: 23;
 }
 
 /* ========== Revirw Styles ========== */
@@ -323,11 +351,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	z-index: 50;
 }
 
 .review__content {
 	background-color: var(--light-bg, #aaaaaaaa);
-	z-index: 5;
+	z-index: 53;
 }
 
 .review__title {
@@ -370,25 +399,32 @@ body {
 	bottom: -5%;
 	right: -20%;
 	width: 100%;
+	z-index: 51;
 }
 
 .customer {
 	width: 100%;
 	opacity: 0;
+	z-index: 52;
 }
 
 /* ========== Contact Styles ========== */
 .contact {
 	padding: 6rem 0 2rem;
-	background-image: url(./assets/contact/contacn-bg.jpg);
+	z-index: 40;
+}
+
+.contact__layer {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	z-index: 41;
 }
 
 .contact__content {
 	background-color: var(--light-bg, #aaaaaaaa);
 	gap: 1.5rem;
+	z-index: 42;
 }
 
 .contact__title {
@@ -535,7 +571,7 @@ body {
 
 	/* ========== About Styles ========== */
 	.about {
-		padding: 9rem 0;
+		padding: 9rem 0 0;
 	}
 
 	/* ========== Service Styles ========== */

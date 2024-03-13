@@ -1,6 +1,8 @@
 // ========== BANNER COMPONENT MODULE ========== //
 
 import { useState, useEffect } from 'react';
+import { ParallaxBanner, ParallaxBannerLayer, Parallax } from 'react-scroll-parallax';
+import heroBgImage from '../assets/banner/banner-bg.jpg';
 import heroImage from '../assets/banner/employee.webp';
 import heroesImage from '../assets/banner/employers.webp';
 
@@ -34,9 +36,14 @@ const Banner = () => {
 	const imgSrc = (screenOrientation === 'landscape' ? heroesImage : heroImage);
 
 	return (
-		<section className='banner' id='banner'>
+		<ParallaxBanner className='banner' id='banner'>
+			<ParallaxBannerLayer
+				className='banner__layer'
+				image={heroBgImage}
+				speed={-30}
+			/>
 			<div className='banner__wrapper wrapper'>
-				<div className='banner__content content'>
+				<Parallax className='banner__content content' speed={-15}>
 					<h1 className='banner__title title'>
 						Professional Car Service in Boston.
 					</h1>
@@ -60,12 +67,12 @@ const Banner = () => {
 						</select>
 						<input type='button' value='Search!' />
 					</form>
-				</div>
+				</Parallax>
 				<div className='banner__image image'>
 					<img className='employers' src={imgSrc} alt='employers' style={employeeStyle} />
 				</div>
 			</div>
-		</section>
+		</ParallaxBanner>
 	);
 };
 
